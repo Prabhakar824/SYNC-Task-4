@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>User Registration Page</title>
+<style>
+body{ 
+   background-image: url('https://evreka.co/wp-content/uploads/2021/04/Food-Waste-Collection-Software-for-a-Better-Environment-and-Easy-Management-2048x1152.jpeg');
+   background-size: cover;
+ }
+table
+{
+ background-color:black;
+ color:yellow;
+}
+.button
+ {
+    font-family: "Bree Serif";
+    color: white;
+    background-color: #5752ab;
+    width: 150px;
+    height: 35px;
+    border-width: 2px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+</style>
+<script language="javascript">
+function validate()
+{
+ var nam=document.f1.name.value;
+ if(nam=="")
+   {
+    alert("enter the name");
+    document.f1.name.focus;
+    return false;
+   }
+ var pwd=document.f1.pass.value;
+ if(pwd=="")
+   {
+    alert("enter the password");
+    document.f1.pass.focus;
+    return false;
+   }
+ var Email=document.f1.email.value;
+ if(Email=="")
+   {
+    alert("enter the Email");
+    document.f1.email.focus;
+    return false;
+   }
+var Ads=document.f1.address.value;
+ if(Ads=="")
+   {
+    alert("enter the Address");
+    document.f1.address.focus;
+    return false;
+   }
+ var phoneno=document.f1.phone.value;
+ if(phoneno=="")
+   {
+    alert("enter the Phone no");
+    document.f1.phone.focus;
+    return false;
+   }
+}
+</script>
+</head>
+<body>
+<br/><br/><br/>
+<center>
+<form name="f1" action="#" method="post" onsubmit="javascript:return validate()">
+<table border="3" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table cellspacing="10">
+<td>
+<td colspan="2" align="center"><h2><u>User Registration Form</u></h2></td>
+</tr>
+<tr>
+<td>User Name</td>
+<td><input type="text" name="name" size="50"></td>
+</tr>
+<tr>
+<td> Password</td>
+<td><input type="password" name="pass" size="50"></td>
+</tr>
+<tr>
+<td>E-mail</td>
+<td><input type="email" name="email" size="50"></td>
+</tr>
+<tr>
+<td>Type of Food</td>
+<td><input type="radio" name="c1",checked>WET FOOD
+<input type="radio" name="c1" >DRY FOOD</td>
+</tr
+<tr>
+<td>Phone</td>
+<td><input type="phone" name="phone" size="50"></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea name="address" rows="5" cols="50"></textarea></td>
+</tr>
+<tr>
+<td></td>
+<td align="center" ><input type="submit" name="submit" value="submit"</td>
+<td ><button class="button" onclick="window.location.href='split.html';">Next step</button></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
